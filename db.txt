@@ -1,0 +1,22 @@
+<?php 
+
+$cars = [
+    [   
+        'PK'=> 1                                                BIGINT              NOTNULL  AUTO INCREMENT  UNIQUE
+        'marca' => "Audi",                                      VARCHAR             NOTNULL
+        'modello' => "A3",                                      VARCHAR             NOTNULL
+        'categoria' => "station wagon",                         VARCHAR             NOTNULL
+        'prezzo' =>  30000,                                     FLOAT(9,2)          NOTNULL                                                  
+        'potenza' => 130cv,                                     VARCHAR             NOTNULL                                           
+        'motore' => "benzina"                                   VARCHAR             NOTNULL                     
+        'meccanicaCambio' => manuale,                           VARCHAR             NOTNULL   Default (manuale)                
+        'disponibilità' => 5,                                   SMALL INT           NOTNULL                     
+        'porte' => 3 ,                                          INT                 NOTNULL               
+
+    ],
+
+];
+
+var_dump($cars);
+
+?>
